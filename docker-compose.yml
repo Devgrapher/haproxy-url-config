@@ -1,0 +1,10 @@
+version: '2'
+services:
+  haproxy:
+    image: haproxy-url-config
+    build:
+      context: .
+    ports:
+      - 80:80
+    environment:
+      HAPROXY_CFG_URL: ''
